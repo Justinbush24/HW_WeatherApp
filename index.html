@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather APP</title>
+</head>
+
+<body>
+    <header>Weather App</header>
+    <div class="container">
+        <div class="form-group">
+            <div class="col-sm-10">
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom03">City</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </div>
+            <!-- container for current weather conditions -->
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <!-- city name -->
+                    <h1 class="display-4">city name</h1>
+                    <!-- icon for good UV -->
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-diamond" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z" />
+                    </svg>
+                    <!-- icon for moderate UV -->
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-exclamation-diamond" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z" />
+                        <path
+                            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+                    </svg>
+                    <!-- icon for severe UV -->
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-exclamation-diamond-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                    </svg>
+                    <!-- list for weather conditions -->
+                    <p class="lead">
+                        <ul class="list-group list-group-horizontal">
+                            <li class="list-group-item flex-fill">Date</li>
+                            <li class="list-group-item flex-fill">Current Temperature</li>
+                            <li class="list-group-item flex-fill">Current Humidity</li>
+                            <li class="list-group-item flex-fill">Current Wind Speed</li>
+                            <li class="list-group-item flex-fill">Current UV Index</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!-- cards for 5 day forecast -->
+            <div class="card-deck">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Date MM/DD/YYYY </h5>
+                        <p class="card-text">Temperature</p>
+                        <p class="card-text">Humidity</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Date MM/DD/YYYY </h5>
+                        <p class="card-text">Temperature</p>
+                        <p class="card-text">Humidity</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Date MM/DD/YYYY </h5>
+                        <p class="card-text">Temperature</p>
+                        <p class="card-text">Humidity</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Date MM/DD/YYYY </h5>
+                        <p class="card-text">Temperature</p>
+                        <p class="card-text">Humidity</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Date MM/DD/YYYY </h5>
+                        <p class="card-text">Temperature</p>
+                        <p class="card-text">Humidity</p>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
